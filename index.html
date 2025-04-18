@@ -183,20 +183,32 @@
                 });
 
                 // Form submission handling
-                const contactForm = document.getElementById('contact-form');
-                contactForm.addEventListener('submit', function (e) {
-                    e.preventDefault();
-                    const name = document.getElementById('name').value;
-                    const email = document.getElementById('email').value;
-                    const message = document.getElementById('message').value;
+contactForm.addEventListener('submit', async function (e) {
+    e.preventDefault();
+    
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
 
-                    if (name && email && message) {
-                        alert(`Thank you, ${name}! Your message has been received. I'll get back to you soon.`);
-                        contactForm.reset();
-                    } else {
-                        alert('Please fill in all fields');
-                    }
-                });
+    if (name && email && message) {
+        const formData = new FormData(contactForm);
+        
+        const response = await fetch(contactForm.action, {
+            method: "POST",
+            body: formData,
+            headers: { 'Accept': 'application/json' }
+        });
+
+        if (response.ok) {
+            alert(`Thank you, ${name}! Your message has been received. I'll get back to you soon.`);
+            contactForm.reset();
+        } else {
+            alert('Oops! Something went wrong.');
+        }
+    } else {
+        alert('Please fill in all fields');
+    }
+});
 
                 // Add scroll reveal animations
                 window.addEventListener('scroll', revealElements);
