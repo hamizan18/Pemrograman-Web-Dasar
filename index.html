@@ -1,236 +1,594 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hamizan's Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <!-- Navigation -->
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#media">Media</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    
-        <!-- Hero Section -->
-        <section id="home" class="hero">
-            <div class="hero-content">
-                <img class="profile-img fade-in" src="assets/fotoo.jpeg" alt="Hamizan Putra Zulia">
-                <h1 class="fade-in delay-1">HAMIZAN PUTRA ZULIA <br> <span class="japanese">(ハミザン プトラ ズリア)</span></h1>
-                <h3 class="fade-in delay-2">Student at Politeknik Negeri Lhokseumawe 
-                </h3>
-                <p class="fade-in delay-3">NIM: 2024573010013 | Class: TI 1C</p>
-            </div>
-        </section>
-    
-        <!-- About Section -->
-        <section id="about" class="about">
-            <div class="container">
-                <h2>About Me</h2>
-                <div class="about-content">
-                    <div class="about-text">
-                        <p>
-                            Perkenalkan nama saya Hamizan Putra Zulia sama seperti yang tertera diatas, tetapi bahasanya
-                            baru Jepang walaupun baru bisa letter, oiya Rusia juga tpi emg cuma letter sama prviyet hehe. 
-                            Saya adalah mahasiswa Politeknik Negeri Lhokseumawe, saat ini saya masih berada di semester 2
-                            dan saya selalu bersemangat dalam memperlajari hal-hal yang sangat saya sukai, begitu juga sebaliknya.
-                        </p>
-                        <p>
-                            Hobi saya adalah membaca subtitle, berenang, dan menonton. Saya adalah seorang yang introvert,
-                            saya tidak sanggup banyak bicara, tidak sanggup banyak bergerak dan cepat habis energi jika
-                            melakukan aktivitas-aktivitas diluar ruangan. Karena kekurangan saya adalah energi saya yang 
-                            sangatlah sedikit.
-                        </p>
-                        
-                    </div>
-                    <div class="skills">
-                        <h3>My Skills</h3>
-                        <div class="skill-bar">
-                            <div class="skill-name">HTML & CSS</div>
-                            <div class="skill-progress">
-                                <div class="progress" style="width: 8%;"></div>
-                            </div>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-name">JavaScript</div>
-                            <div class="skill-progress">
-                                <div class="progress" style="width: 1%;"></div>
-                            </div>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-name">Swimming</div>
-                            <div class="skill-progress">
-                                <div class="progress" style="width: 90%;"></div>
-                            </div>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-name">Subtitle Reading</div>
-                            <div class="skill-progress">
-                                <div class="progress" style="width: 100%;"></div>
-                            </div>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-name">Design</div>
-                            <div class="skill-progress">
-                                <div class="progress" style="width: 75%;"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    
-        <!-- Media Section -->
-        <section id="media" class="media">
-            <div class="container">
-                <h2>My Media</h2>
-                <div class="media-container">
-                    <div class="video-section">
-                        <h3>My Video</h3>
-                        <video controls poster="/api/placeholder/400/320">
-                            <source src="assets/jatoh.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                    <div class="audio-section">
-                        <h3>My Music</h3>
-                        <audio controls>
-                            <source src="assets/blackcatcher.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio>
-                        <audio controls>
-                            <source src="assets/kaijuu.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio>
-                    </div>
-                </div>
-            </div>
-        </section>
-    
-        <!-- Contact Section -->
-        <section id="contact" class="about">
-            <div class="container">
-                <h2>Contact Me</h2>
-                <div class="about-content">
-                    <div class="about-text">
-                        <p><b>ngomong apa aja disinii</b></p>
-                        <form id="contact-form" action="https://formspree.io/f/mdkezzdy" method="POST">
-                            <div style="margin-bottom: 15px;">
-                                <label for="name" style="display: block; margin-bottom: 5px;">Name:</label>
-                                <input type="text" id="name" placeholder="Your name here" 
-                                    style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ddd;">
-                            </div>
-                            <div style="margin-bottom: 15px;">
-                                <label for="email" style="display: block; margin-bottom: 5px;">Email:</label>
-                                <input type="email" id="email" name="email" placeholder="Your email here" 
-                                    style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ddd;">
-                            </div>
-                            <div style="margin-bottom: 15px;">
-                                <label for="message" style="display: block; margin-bottom: 5px;">Message:</label>
-                                <textarea id="message" rows="5" name="message" placeholder="For the message!!" 
-                                    style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ddd;"></textarea>
-                            </div>
-                            <button type="submit"
-                                style="background-color: #3498db; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; transition: background-color 0.3s;">Send
-                                Message</button>
-                        </form>
-                    </div>
-                    <div class="skills">
-                        <h3>Location</h3>
-                        <div
-                            style="width: 100%; height: 300px; background-color: #eee; border-radius: 8px; display: flex; justify-content: center; align-items: center;">
-                            <p>Bumi, Indonesia, Aceh, Lhokseumawe.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    
-        <!-- Footer -->
-        <footer>
-            <div class="container">
-                <h3>HAMIZAN PUTRA ZULIA</h3>
-                <p>Student at Politeknik Negeri Lhokseumawe</p>
-                    <div class="social-links">
-                        <a href="https://github.com/hamizan18" title="GitHub"><i class="fab fa-github"></i></a>
-                        <a href="https://www.tiktok.com/@flawzaan?_t=ZS-8vcQmkuvSdw&_r=1" title="TikTok"><i class="fab fa-tiktok"></i></a>
-                        <a href="https://instagram.com/hamizann18" title="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="https://wa.me/+6282272967078" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-                    </div> 
-                <p>&copy; 2025 Hamizan Putra Zulia desuuu. All rights reserved.</p>
-            </div>
-        </footer>
-    
-        <script>
-            // Scroll animations
-            document.addEventListener('DOMContentLoaded', function () {
-                // Smooth scrolling for navigation links
-                document.querySelectorAll('nav a').forEach(anchor => {
-                    anchor.addEventListener('click', function (e) {
-                        e.preventDefault();
-                        const targetId = this.getAttribute('href');
-                        const targetSection = document.querySelector(targetId);
-                        window.scrollTo({
-                            top: targetSection.offsetTop,
-                            behavior: 'smooth'
-                        });
-                    });
-                });
-
-                // Form submission handling
-contactForm.addEventListener('submit', async function (e) {
-    e.preventDefault();
-    
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
-
-    if (name && email && message) {
-        const formData = new FormData(contactForm);
-        
-        const response = await fetch(contactForm.action, {
-            method: "POST",
-            body: formData,
-            headers: { 'Accept': 'application/json' }
-        });
-
-        if (response.ok) {
-            alert(`Thank you, ${name}! Your message has been received. I'll get back to you soon.`);
-            contactForm.reset();
-        } else {
-            alert('Oops! Something went wrong.');
-        }
-    } else {
-        alert('Please fill in all fields');
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout Flexbox Praktikum - Enhanced</title>
+  <style>
+    :root {
+      --primary-color: #3498db;
+      --secondary-color: #2ecc71;
+      --dark-color: #2c3e50;
+      --light-color: #f8f9fa;
+      --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      --transition-speed: 0.3s;
     }
-});
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f5f5f5;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    
+    header {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 1.5rem 0;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    
+    header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+    
+    .nav-toggle {
+      display: none;
+      background: transparent;
+      border: none;
+      color: white;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+    
+    nav ul {
+      display: flex;
+      list-style: none;
+    }
+    
+    nav ul li {
+      margin-left: 1.5rem;
+    }
+    
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 0.5rem;
+      transition: all var(--transition-speed);
+    }
+    
+    nav ul li a:hover {
+      color: var(--light-color);
+      border-bottom: 2px solid var(--light-color);
+    }
+    
+    main {
+      display: flex;
+      flex: 1;
+      margin: 2rem 0;
+    }
+    
+    aside {
+      width: 25%;
+      background-color: var(--secondary-color);
+      color: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: var(--card-shadow);
+    }
+    
+    .menu-title {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    }
+    
+    .menu-list {
+      list-style: none;
+    }
+    
+    .menu-list li {
+      margin-bottom: 0.8rem;
+    }
+    
+    .menu-list li a {
+      color: white;
+      text-decoration: none;
+      display: block;
+      padding: 0.5rem;
+      border-radius: 4px;
+      transition: all var(--transition-speed);
+    }
+    
+    .menu-list li a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+      transform: translateX(5px);
+    }
+    
+    section {
+      flex: 1;
+      background-color: var(--light-color);
+      padding: 1.5rem;
+      margin-left: 20px;
+      border-radius: 8px;
+      box-shadow: var(--card-shadow);
+    }
+    
+    .section-header {
+      margin-bottom: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .section-title {
+      font-size: 1.5rem;
+      color: var(--dark-color);
+    }
+    
+    .view-options {
+      display: flex;
+      gap: 10px;
+    }
+    
+    .view-btn {
+      background: transparent;
+      border: none;
+      padding: 5px;
+      cursor: pointer;
+      color: var(--dark-color);
+      font-size: 1.2rem;
+    }
+    
+    .view-btn:hover {
+      color: var(--primary-color);
+    }
+    
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    
+    .card {
+      flex: 1 1 calc(33.33% - 20px);
+      min-width: 230px;
+      background-color: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: var(--card-shadow);
+      transition: all var(--transition-speed);
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    .card-image {
+      height: 150px;
+      background-color: #f0f0f0;
+      border-radius: 6px;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #777;
+    }
+    
+    .card-title {
+      font-weight: bold;
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+      color: var(--dark-color);
+    }
+    
+    .card-price {
+      color: var(--primary-color);
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+    
+    .card-text {
+      color: #666;
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+    }
+    
+    .card-footer {
+      margin-top: auto;
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    .btn {
+      display: inline-block;
+      background-color: var(--primary-color);
+      color: white;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: all var(--transition-speed);
+    }
+    
+    .btn:hover {
+      background-color: #2980b9;
+      transform: scale(1.05);
+    }
+    
+    .btn-outline {
+      background-color: transparent;
+      border: 1px solid var(--primary-color);
+      color: var(--primary-color);
+    }
+    
+    .btn-outline:hover {
+      background-color: var(--primary-color);
+      color: white;
+    }
+    
+    footer {
+      background-color: var(--dark-color);
+      color: white;
+      padding: 2rem 0;
+      margin-top: auto;
+    }
+    
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    
+    .footer-logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+    
+    .footer-links {
+      display: flex;
+      list-style: none;
+      gap: 1.5rem;
+    }
+    
+    .footer-links a {
+      color: #bdc3c7;
+      text-decoration: none;
+      transition: color var(--transition-speed);
+    }
+    
+    .footer-links a:hover {
+      color: white;
+    }
+    
+    .copyright {
+      width: 100%;
+      text-align: center;
+      padding-top: 2rem;
+      margin-top: 2rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      color: #bdc3c7;
+      font-size: 0.9rem;
+    }
+    
+    /* Responsive layout */
+    @media (max-width: 900px) {
+      .card {
+        flex: 1 1 calc(50% - 20px);
+      }
+    }
+    
+    @media (max-width: 768px) {
+      main {
+        flex-direction: column;
+      }
+      
+      aside {
+        width: 100%;
+        margin-bottom: 1.5rem;
+      }
+      
+      section {
+        margin-left: 0;
+      }
+      
+      .nav-toggle {
+        display: block;
+      }
+      
+      nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: var(--primary-color);
+        padding: 1rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition: clip-path var(--transition-speed);
+      }
+      
+      nav.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      }
+      
+      nav ul {
+        flex-direction: column;
+      }
+      
+      nav ul li {
+        margin: 0;
+        margin-bottom: 1rem;
+      }
+      
+      .footer-content {
+        flex-direction: column;
+        text-align: center;
+      }
+      
+      .footer-links {
+        margin-top: 1rem;
+        justify-content: center;
+      }
+    }
+    
+    @media (max-width: 500px) {
+      .card {
+        flex: 1 1 100%;
+      }
+      
+      .footer-links {
+        flex-direction: column;
+        gap: 0.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">Flexbox Shop</div>
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+      <nav id="main-nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Categories</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-                // Add scroll reveal animations
-                window.addEventListener('scroll', revealElements);
+  <div class="container">
+    <main>
+      <aside>
+        <h2 class="menu-title">Categories</h2>
+        <ul class="menu-list">
+          <li><a href="#">Electronics</a></li>
+          <li><a href="#">Clothing</a></li>
+          <li><a href="#">Home & Garden</a></li>
+          <li><a href="#">Sports</a></li>
+          <li><a href="#">Books</a></li>
+          <li><a href="#">Toys</a></li>
+          <li><a href="#">Health & Beauty</a></li>
+        </ul>
+      </aside>
+      <section>
+        <div class="section-header">
+          <h2 class="section-title">Featured Products</h2>
+          <div class="view-options">
+            <button class="view-btn" aria-label="Grid view">◼</button>
+            <button class="view-btn" aria-label="List view">≡</button>
+          </div>
+        </div>
+        <div class="cards">
+          <div class="card">
+            <div class="card-image">Product Image</div>
+            <h3 class="card-title">Produk 1</h3>
+            <div class="card-price">Rp 199.000</div>
+            <p class="card-text">Modern and stylish product with great features.</p>
+            <div class="card-footer">
+              <button class="btn">Add to Cart</button>
+              <button class="btn btn-outline">Details</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">Product Image</div>
+            <h3 class="card-title">Produk 2</h3>
+            <div class="card-price">Rp 299.000</div>
+            <p class="card-text">High-quality product with premium materials.</p>
+            <div class="card-footer">
+              <button class="btn">Add to Cart</button>
+              <button class="btn btn-outline">Details</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">Product Image</div>
+            <h3 class="card-title">Produk 3</h3>
+            <div class="card-price">Rp 149.000</div>
+            <p class="card-text">Best value for money with amazing performance.</p>
+            <div class="card-footer">
+              <button class="btn">Add to Cart</button>
+              <button class="btn btn-outline">Details</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">Product Image</div>
+            <h3 class="card-title">Produk 4</h3>
+            <div class="card-price">Rp 249.000</div>
+            <p class="card-text">Innovative design with cutting-edge technology.</p>
+            <div class="card-footer">
+              <button class="btn">Add to Cart</button>
+              <button class="btn btn-outline">Details</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">Product Image</div>
+            <h3 class="card-title">Produk 5</h3>
+            <div class="card-price">Rp 399.000</div>
+            <p class="card-text">Premium product with exclusive features.</p>
+            <div class="card-footer">
+              <button class="btn">Add to Cart</button>
+              <button class="btn btn-outline">Details</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">Product Image</div>
+            <h3 class="card-title">Produk 6</h3>
+            <div class="card-price">Rp 179.000</div>
+            <p class="card-text">Versatile and durable for everyday use.</p>
+            <div class="card-footer">
+              <button class="btn">Add to Cart</button>
+              <button class="btn btn-outline">Details</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">Product Image</div>
+            <h3 class="card-title">Produk 7</h3>
+            <div class="card-price">Rp 229.000</div>
+            <p class="card-text">Popular choice with excellent reviews.</p>
+            <div class="card-footer">
+              <button class="btn">Add to Cart</button>
+              <button class="btn btn-outline">Details</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">Product Image</div>
+            <h3 class="card-title">Produk 8</h3>
+            <div class="card-price">Rp 349.000</div>
+            <p class="card-text">Luxurious item with sophisticated details.</p>
+            <div class="card-footer">
+              <button class="btn">Add to Cart</button>
+              <button class="btn btn-outline">Details</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">Product Image</div>
+            <h3 class="card-title">Produk 9</h3>
+            <div class="card-price">Rp 199.000</div>
+            <p class="card-text">Classic design with modern functionality.</p>
+            <div class="card-footer">
+              <button class="btn">Add to Cart</button>
+              <button class="btn btn-outline">Details</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">Product Image</div>
+            <h3 class="card-title">Produk 10</h3>
+            <div class="card-price">Rp 279.000</div>
+            <p class="card-text">Reliable performance with great durability.</p>
+            <div class="card-footer">
+              <button class="btn">Add to Cart</button>
+              <button class="btn btn-outline">Details</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">Product Image</div>
+            <h3 class="card-title">Produk 11</h3>
+            <div class="card-price">Rp 159.000</div>
+            <p class="card-text">Affordable option with impressive features.</p>
+            <div class="card-footer">
+              <button class="btn">Add to Cart</button>
+              <button class="btn btn-outline">Details</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">Product Image</div>
+            <h3 class="card-title">Produk 12</h3>
+            <div class="card-price">Rp 319.000</div>
+            <p class="card-text">Limited edition item with unique design.</p>
+            <div class="card-footer">
+              <button class="btn">Add to Cart</button>
+              <button class="btn btn-outline">Details</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
 
-                function revealElements() {
-                    const sections = document.querySelectorAll('section:not(.hero)');
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div>
+          <div class="footer-logo">Flexbox Shop</div>
+          <p>Your one-stop shop for quality products</p>
+        </div>
+        <ul class="footer-links">
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+      </div>
+      <div class="copyright">&copy; Hamizan desu 2025. All Rights Reserved.</div>
+    </div>
+  </footer>
 
-                    sections.forEach(section => {
-                        const sectionTop = section.getBoundingClientRect().top;
-                        const windowHeight = window.innerHeight;
-
-                        if (sectionTop < windowHeight - 100) {
-                            section.classList.add('fade-in');
-                        }
-                    });
-                }
-
-                // Initially check for elements in view
-                revealElements();
-            });
-        </script>
-        </body>
-        
-        </html>
+  <script>
+    // Toggle mobile navigation
+    document.querySelector('.nav-toggle').addEventListener('click', function() {
+      document.getElementById('main-nav').classList.toggle('active');
+    });
+    
+    // View options functionality (grid/list)
+    const viewButtons = document.querySelectorAll('.view-btn');
+    const cardsContainer = document.querySelector('.cards');
+    
+    viewButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        if (this.getAttribute('aria-label') === 'List view') {
+          cardsContainer.style.display = 'block';
+          document.querySelectorAll('.card').forEach(card => {
+            card.style.width = '100%';
+            card.style.marginBottom = '20px';
+          });
+        } else {
+          cardsContainer.style.display = 'flex';
+          document.querySelectorAll('.card').forEach(card => {
+            card.style.width = '';
+            card.style.marginBottom = '';
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
