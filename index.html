@@ -1,236 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hamizan's Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <!-- Navigation -->
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#media">Media</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    
-        <!-- Hero Section -->
-        <section id="home" class="hero">
-            <div class="hero-content">
-                <img class="profile-img fade-in" src="assets/fotoo.jpeg" alt="Hamizan Putra Zulia">
-                <h1 class="fade-in delay-1">HAMIZAN PUTRA ZULIA <br> <span class="japanese">(ハミザン プトラ ズリア)</span></h1>
-                <h3 class="fade-in delay-2">Student at Politeknik Negeri Lhokseumawe 
-                </h3>
-                <p class="fade-in delay-3">NIM: 2024573010013 | Class: TI 1C</p>
-            </div>
-        </section>
-    
-        <!-- About Section -->
-        <section id="about" class="about">
-            <div class="container">
-                <h2>About Me</h2>
-                <div class="about-content">
-                    <div class="about-text">
-                        <p>
-                            Perkenalkan nama saya Hamizan Putra Zulia sama seperti yang tertera diatas, tetapi bahasanya
-                            baru Jepang walaupun baru bisa letter, oiya Rusia juga tpi emg cuma letter sama prviyet hehe. 
-                            Saya adalah mahasiswa Politeknik Negeri Lhokseumawe, saat ini saya masih berada di semester 2
-                            dan saya selalu bersemangat dalam memperlajari hal-hal yang sangat saya sukai, begitu juga sebaliknya.
-                        </p>
-                        <p>
-                            Hobi saya adalah membaca subtitle, berenang, dan menonton. Saya adalah seorang yang introvert,
-                            saya tidak sanggup banyak bicara, tidak sanggup banyak bergerak dan cepat habis energi jika
-                            melakukan aktivitas-aktivitas diluar ruangan. Karena kekurangan saya adalah energi saya yang 
-                            sangatlah sedikit.
-                        </p>
-                        
-                    </div>
-                    <div class="skills">
-                        <h3>My Skills</h3>
-                        <div class="skill-bar">
-                            <div class="skill-name">HTML & CSS</div>
-                            <div class="skill-progress">
-                                <div class="progress" style="width: 8%;"></div>
-                            </div>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-name">JavaScript</div>
-                            <div class="skill-progress">
-                                <div class="progress" style="width: 1%;"></div>
-                            </div>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-name">Swimming</div>
-                            <div class="skill-progress">
-                                <div class="progress" style="width: 90%;"></div>
-                            </div>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-name">Subtitle Reading</div>
-                            <div class="skill-progress">
-                                <div class="progress" style="width: 100%;"></div>
-                            </div>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-name">Design</div>
-                            <div class="skill-progress">
-                                <div class="progress" style="width: 75%;"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    
-        <!-- Media Section -->
-        <section id="media" class="media">
-            <div class="container">
-                <h2>My Media</h2>
-                <div class="media-container">
-                    <div class="video-section">
-                        <h3>My Video</h3>
-                        <video controls poster="/api/placeholder/400/320">
-                            <source src="assets/jatoh.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                    <div class="audio-section">
-                        <h3>My Music</h3>
-                        <audio controls>
-                            <source src="assets/blackcatcher.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio>
-                        <audio controls>
-                            <source src="assets/kaijuu.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio>
-                    </div>
-                </div>
-            </div>
-        </section>
-    
-        <!-- Contact Section -->
-        <section id="contact" class="about">
-            <div class="container">
-                <h2>Contact Me</h2>
-                <div class="about-content">
-                    <div class="about-text">
-                        <p><b>ngomong apa aja disinii</b></p>
-                        <form id="contact-form" action="https://formspree.io/f/mdkezzdy" method="POST">
-                            <div style="margin-bottom: 15px;">
-                                <label for="name" style="display: block; margin-bottom: 5px;">Name:</label>
-                                <input type="text" id="name" placeholder="Your name here" 
-                                    style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ddd;">
-                            </div>
-                            <div style="margin-bottom: 15px;">
-                                <label for="email" style="display: block; margin-bottom: 5px;">Email:</label>
-                                <input type="email" id="email" name="email" placeholder="Your email here" 
-                                    style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ddd;">
-                            </div>
-                            <div style="margin-bottom: 15px;">
-                                <label for="message" style="display: block; margin-bottom: 5px;">Message:</label>
-                                <textarea id="message" rows="5" name="message" placeholder="For the message!!" 
-                                    style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ddd;"></textarea>
-                            </div>
-                            <button type="submit"
-                                style="background-color: #3498db; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; transition: background-color 0.3s;">Send
-                                Message</button>
-                        </form>
-                    </div>
-                    <div class="skills">
-                        <h3>Location</h3>
-                        <div
-                            style="width: 100%; height: 300px; background-color: #eee; border-radius: 8px; display: flex; justify-content: center; align-items: center;">
-                            <p>Bumi, Indonesia, Aceh, Lhokseumawe.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    
-        <!-- Footer -->
-        <footer>
-            <div class="container">
-                <h3>HAMIZAN PUTRA ZULIA</h3>
-                <p>Student at Politeknik Negeri Lhokseumawe</p>
-                    <div class="social-links">
-                        <a href="https://github.com/hamizan18" title="GitHub"><i class="fab fa-github"></i></a>
-                        <a href="https://www.tiktok.com/@flawzaan?_t=ZS-8vcQmkuvSdw&_r=1" title="TikTok"><i class="fab fa-tiktok"></i></a>
-                        <a href="https://instagram.com/hamizann18" title="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="https://wa.me/+6282272967078" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-                    </div> 
-                <p>&copy; 2025 Hamizan Putra Zulia desuuu. All rights reserved.</p>
-            </div>
-        </footer>
-    
-        <script>
-            // Scroll animations
-            document.addEventListener('DOMContentLoaded', function () {
-                // Smooth scrolling for navigation links
-                document.querySelectorAll('nav a').forEach(anchor => {
-                    anchor.addEventListener('click', function (e) {
-                        e.preventDefault();
-                        const targetId = this.getAttribute('href');
-                        const targetSection = document.querySelector(targetId);
-                        window.scrollTo({
-                            top: targetSection.offsetTop,
-                            behavior: 'smooth'
-                        });
-                    });
-                });
-
-                // Form submission handling
-contactForm.addEventListener('submit', async function (e) {
-    e.preventDefault();
-    
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
-
-    if (name && email && message) {
-        const formData = new FormData(contactForm);
-        
-        const response = await fetch(contactForm.action, {
-            method: "POST",
-            body: formData,
-            headers: { 'Accept': 'application/json' }
-        });
-
-        if (response.ok) {
-            alert(`Thank you, ${name}! Your message has been received. I'll get back to you soon.`);
-            contactForm.reset();
-        } else {
-            alert('Oops! Something went wrong.');
-        }
-    } else {
-        alert('Please fill in all fields');
-    }
-});
-
-                // Add scroll reveal animations
-                window.addEventListener('scroll', revealElements);
-
-                function revealElements() {
-                    const sections = document.querySelectorAll('section:not(.hero)');
-
-                    sections.forEach(section => {
-                        const sectionTop = section.getBoundingClientRect().top;
-                        const windowHeight = window.innerHeight;
-
-                        if (sectionTop < windowHeight - 100) {
-                            section.classList.add('fade-in');
-                        }
-                    });
-                }
-
-                // Initially check for elements in view
-                revealElements();
-            });
-        </script>
-        </body>
-        
-        </html>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout Flexbox Praktikum</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>INI HEADER NYAH</header>
+  <main>
+    <aside>BAGIAN MENU</aside>
+    <section>
+      <h2>Konten</h2>
+      <div class="cards">
+        <div class="card">Produk 1</div>
+        <div class="card">Produk 2</div>
+        <div class="card">Produk 3</div>
+        <div class="card">Produk 4</div>
+        <div class="card">Produk 5</div>
+        <div class="card">Produk 6</div>
+        <div class="card">Produk 7</div>
+        <div class="card">Produk 8</div>
+        <div class="card">Produk 9</div>
+        <div class="card">Produk 10</div>
+        <div class="card">Produk 11</div>
+        <div class="card">Produk 12</div>
+      </div>
+    </section>
+  </main>
+  <footer>&copy;Hamizan desu 2025. All Right Reserved.</footer>
+</body>
+</html>
